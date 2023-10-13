@@ -2,6 +2,9 @@
 .card{
     display:flex;
     flex-direction: column;
+    overflow: auto;
+    box-sizing: border-box;
+    flex-wrap:wrap;
 }
 .image{
     max-width:400px;
@@ -10,7 +13,7 @@
 }
 
 @media screen and (max-width: 840px) {
-    .grid{
+    .card{
         display:flex !important;
         flex-direction: column !important;
     }
