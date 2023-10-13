@@ -1,5 +1,17 @@
+
+.card{
+    display:flex;
+    flex-direction: column;
+}
 .image{
-    max-width:500px;
+    max-width:400px;
     min-width: 310px;
     border-radius: 15px;
+}
+
+@media screen and (max-width: 840px) {
+    .grid{
+        display:flex !important;
+        flex-direction: column !important;
+    }
 }

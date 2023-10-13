@@ -5,3 +5,10 @@
     padding-left: 1rem;
     padding-bottom: 1rem;
 }
+
+@media screen and (max-width: 840px) {
+    .grid{
+        display:flex ;
+        flex-direction: column ;
+    }
+}
