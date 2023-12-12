@@ -1,11 +1,16 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { HttpClientModule } from '@angular/common/http';
+
 
 //Routes
 import {app_routing} from './app.routes'
 
+//Services
+import {InformationService} from "./services/information.service";
 
-import { AppRoutingModule } from './app-routing.module';
+//Components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -24,9 +29,12 @@ import { ItemdetailComponent } from './components/itemdetail/itemdetail.componen
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     app_routing
   ],
-  providers: [],
+  providers: [
+    InformationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
