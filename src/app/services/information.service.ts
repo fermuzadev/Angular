@@ -13,7 +13,6 @@ export class InformationService {
     .subscribe(data => {
       this.loaded = true;
       this.info = data;
-      console.log(data)
     })
   }
 }
