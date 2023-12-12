@@ -6,13 +6,29 @@ import { HttpClient } from '@angular/common/http';
 export class InformationService {
 
   info:any = {};
-  loaded:boolean = false;
+  load:boolean = false;
+  loadabout:boolean = false;
+  team:any = [];
 
   constructor(public http: HttpClient) { 
-    this.http.get("assets/data/data.json")
-    .subscribe(data => {
-      this.loaded = true;
-      this.info = data;
-    })
+    this.info_load();
+    this.load_aboutus();
+    
   }
+    
+    public info_load() {
+      this.http.get("assets/data/data.json")
+      .subscribe(data => {
+        this.load = true;
+        this.info = data;
+      })
+    }
+
+    public load_aboutus() {
+      this.http.get("assets/data/data.json")
+      .subscribe(data => {
+        this.loadabout = true;
+        this.team = data;
+      })
+    }
 }
