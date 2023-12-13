@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class InformationService {
 
-  info:any = {};
+  info:unknown = {};
   load:boolean = false;
   loadabout:boolean = false;
   team:any = [];

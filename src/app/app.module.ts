@@ -9,8 +9,8 @@ import {app_routing} from './app.routes'
 import {InformationService} from "./services/information.service";
 
 //Database Firestore
-import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-import { getAnalytics, provideAnalytics } from '@angular/fire/analytics';
+// import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+// import { getAnalytics, provideAnalytics } from '@angular/fire/analytics';
 //Components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -22,26 +22,23 @@ import { ItemdetailComponent } from './components/itemdetail/itemdetail.componen
 
 
 // Replace the following with your actual Firebase configuration
-const firebaseConfig = {
-  apiKey: '...',
-  authDomain: '...',
-  projectId: '...',
-  storageBucket: '...',
-  messagingSenderId: '...',
-  appId: '...',
-};
+// const firebaseConfig = {
+//   apiKey: '...',
+//   authDomain: '...',
+//   projectId: '...',
+//   storageBucket: '...',
+//   messagingSenderId: '...',
+//   appId: '...',
+// };
 
-@NgModule({
-  imports: [
-    // Angular modules
-    ...
+// @NgModule({
+//   imports: [
 
-    // Firebase modules
-    provideFirebaseApp(() => initializeApp(firebaseConfig)),
-    provideAnalytics(() => getAnalytics()),
-  ],
-  // ... other NgModule configurations
-})
+//     provideFirebaseApp(() => initializeApp(firebaseConfig)),
+//     provideAnalytics(() => getAnalytics()),
+//   ],
+//   // ... other NgModule configurations
+// })
 
 @NgModule({
   declarations: [
