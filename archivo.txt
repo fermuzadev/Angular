@@ -1,0 +1,16 @@
+
+
+
+
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyDTnmDEd577JulQcanwY1jqB0O7FCTGBuM",
+  authDomain: "angular-portfolio-3559a.firebaseapp.com",
+  projectId: "angular-portfolio-3559a",
+  storageBucket: "angular-portfolio-3559a.appspot.com",
+  messagingSenderId: "768911791367",
+  appId: "1:768911791367:web:1f6649e00673ccc6e761a2",
+  measurementId: "G-BD536WEZFN"
+};
